@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="text-align: center;"> Job Appication Form</title>
+
+    <style>
+       
+        input {
+            border: 2px solid teal;
+            font: 20px;
+            margin: 5px;
+            padding: 10px 7px 2px 15px;
+
+        }
+
+        label {
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px;
+
+        }
+
+        span {
+            color: red;
+        }
+
+        button {
+            color: palevioletred;
+            background-color: teal;
+            font-size: 25px;
+            font-weight: bold;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center; color:brown;"> Job Application Form</h2>
+
+    <form style="margin-left: 39%;" method="get" terget="_blank">
+
+        <label for="fname"><span>*</span>First Name:</label>
+        <input type="text" placeholder="please enter name" name="fname" />
+        <br>
+
+        <label for="mname">Middle Name</label>
+        <input type="text" placeholder="please enter name" name="mname" />
+        <br>
+
+
+        <label for="lname"><span>*</span>Last Name:</label>
+        <input type="text" placeholder="please enter name" name="lname" />
+        <br>
+
+        <label for="age"> Enter Age:</label>
+        <input type="number" placeholder="please enter age" name="age" />
+        <br>
+
+        <label for="email"><span>*</span>Email</label>
+        <input type="text" placeholder="please enter email" name="email" required />
+
+
+        <label for="number"> Number:</label>
+        <input type="tel" placeholder="please enter Number" name="Number" maxlength="10" />
+        <br>
+
+        <label for="birthaday">Select Birth Day</label>
+        <input type="date" name="birthaday" />
+        <br>
+
+        <label for="Resume">Select Resume</label>
+        <input type="file" name="resume" />
+        <br>
+
+        <label for="country">Select Country</label>
+        <select name="country">
+            <option value="india">India</option>
+            <option value="canada">Canada</option>
+            <option value="Japan">Japan</option>
+            <option value="Australia">Australia</option>
+        </select>
+        <br>
+
+        <input type="radio" name="gender" value="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" value="Female" />
+        <label for="Female">Female</label>
+        <br>
+
+        <textarea name="feedback" cols="30" row="10">please enter feedback</textarea>
+        <br>
+
+        <input type="checkbox" name="term" />
+        <label for="term">I agree T&C</label>
+        <br>
+
+        <input type="reset" />
+
+        <button type="button">Submit</button>
+
+    </form>
+
+</body>
+
+</html>
